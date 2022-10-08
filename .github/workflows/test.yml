@@ -33,5 +33,5 @@ jobs:
           script: |
             mkdir auto-deploy
             cd auto-deploy
-            sudo git clone git@github.com:castilloedwin/react-test.git
+            git clone git@github.com:castilloedwin/react-test.git
             echo 'Deploy done'
