@@ -31,7 +31,7 @@ jobs:
           username: ${{secrets.SSH_USERNAME}}
 
           script: |
-            mkdir react-test
-            cd react-test
+            mkdir auto-deploy
+            cd auto-deploy
             sudo git clone git@github.com:castilloedwin/react-test.git
             echo 'Deploy done'
