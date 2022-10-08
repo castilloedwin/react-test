@@ -1,8 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
+
+  const [ count, setCount ] = useState<number>(0);
+
+  const handleIncrement = (): void => {
+    setCount(count + 1);
+  }
+
+  const handleDecrement = (): void => {
+    setCount(count - 1);
+  }
+
   return (
     <div className="App">
       <header className="App-header">
@@ -16,9 +27,14 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Learn React edwin
         </a>
       </header>
+      <div>
+        <p className='counter'>Value { count }</p>
+        <button onClick={handleIncrement}>Sumar</button>
+        <button onClick={handleDecrement}>Restar</button>
+      </div>
     </div>
   );
 }
