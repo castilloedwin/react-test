@@ -1,4 +1,4 @@
-name: Testing react code to avoid burning everythin
+name: Testing react code
 
 on:
   push:
