@@ -26,7 +26,7 @@ test('Knowing whether plus button works', () => {
 
 test('Knowing whether minus button works', () => {
   fireEvent.click(getByText(/Sumar/i));
-  expect(queryByText(/Value/i)).toHaveTextContent(/1/i);
+  expect(queryByText(/Value/i)).toHaveTextContent(/2/i);
   fireEvent.click(getByText(/Restar/i));
   expect(queryByText(/Value/i)).toHaveTextContent(/0/i);
 });
